@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Contact Page</title>
+		<link rel="icon" href="apple-icon-57x57.png">  
+		
+		<style>
+			body {
+				box-sizing: border-box;
+			}
+			.container {
+				display: flex;
+				justify-content: center;
+			}
+			.form-input,
+			.form-button {
+				font-family: sans-serif;
+				letter-spacing: 1px;
+				font-size: 16px;
+			}
+			.knopka {
+				border: none;
+				background-color: black;
+				color:#fff;
+				padding:18px 300px;
+				border-radius:10px;
+				transition:all 0.2s ease;
+			}
+			.knopka:active {
+				transform:scale(0.96);
+			}
+			.form {
+				width: 700px;
+				padding: 32px;
+				border-radius: 10px;
+				box-shadow: 0 4px 16px #ccc;
+				letter-spacing: 1px;
+				font-family: sans-serif;
+			}
+			
+			.form-label {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				color: #9e9e9e;
+				transition: 0.3s;
+			}
+			.form-input {
+				width: 100%;
+				padding: 0 0 10px 0;
+				border: none;
+				border-bottom: 1px solid black;
+				background-color: transparent;
+				outline: none;
+				transition: 0.3s;
+			}
+			.form-title {
+				text-align:center;
+				margin:0 0 32px 0;
+				font-weight:normal;
+			}
+			.form-group {
+				position: relative;
+				margin-bottom: 60px;
+			}
+			.form-input:focus ~ .form-label,
+			.form-input:not(:placeholder-shown) ~ .form-label {
+				top: -18px;
+				font-size: 12px;
+				color: black;
+			}
+			.footer-container {
+				width: 100%;
+				width: 1074px;
+				margin: 0 auto;
+				padding: 0;
+				box-sizing: border-box;
+				background-color: white;
+				display: block;
+				display: flex;
+				margin-top: 60px;
+			}
+
+			.footer-header {
+				width: 75%;
+			}
+
+			.label-pos {
+				position: relative;
+				left: 10px;
+				margin-bottom: 90px;
+			}
+			.label-har {
+				font-size: 18px;
+				display: block;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			.footer-home {
+				position: relative;
+				top: 50px;
+				font-size: 18px;
+			}
+
+			.secure {
+				display: flex;
+				justify-content: center;
+				position: relative;
+				left: 100px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+			.logo-img {
+				width: 78px;
+			}
+			.ssylka {
+				display: flex;
+			}
+			.p1 {
+				font-size: 20px;
+				position: relative;
+				top: 6px;
+				left: 3px;
+			}
+			.a1 {
+				font-family: Arial, sans-serif;
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="container">
+	
+			<form class="form">
+			
+				<h1 class="form-title">Contact</h1>
+				
+				<div class="form-group">
+					<input class="form-input form-input-number" maxlength="12" required placeholder=" " name="phone" id="phoneNumber">
+					<label class="form-label">Контактный номер телефона</label>
+					<script> 
+						const inputElement = document.getElementById('phoneNumber');
+
+						inputElement.addEventListener('focus', function() {
+							this.value = '+7';
+						});
+
+						inputElement.addEventListener('blur', function() {
+							if (this.value === '+7') {
+								this.value = '';
+							}
+						});
+					</script>
+				</div>
+				
+				<div class="form-group">
+					<input class="form-input" required placeholder=" " name="email">
+					<label class="form-label">Email</label>
+				</div>
+				
+				<div class="form-group">
+					<input class="form-input" required placeholder=" " name="name">
+					<label class="form-label">Введите имя</label> 
+				</div>
+				
+				<div class="form-group">
+					<input class="form-input" required placeholder=" " name="question">
+					<label class="form-label">Текст вопроса</label>
+				</div>
+				
+				<div class="form-group">
+					<button class="knopka form-button" type="submit"><b>ОТПРАВИТЬ</b></button>
+				</div>
+				
+			</form>
+		
+		</div>
+			
+	</body>
+	
+	<footer class="footer-container">
+		
+			<div class="footer-header">
+				<a href="index.html" class="a1">
+					<div class="ssylka">
+						<img src="images/logo.png" class="logo-img" alt="recipebook">
+						<p class="p1">recipebook</p>
+					</div>
+				</a>
+				<div class="label-pos">
+					<label class="label-har">Yerlen Sailaubayev<br></label>
+					<label class="label-har">8 (708) 692 90 69<br></label>
+					<label class="label-har">Vilgefortz04se@gmail.com</label>
+				</div>
+				
+				<div class="secure">
+					<label>2023 Copyright © index.html, All Rights Reserved</label>
+				</div>
+			</div>
+			
+			<div class="footer-home">
+				<a href="index.html" class="a1">Home</a>
+			</div>
+		
+		</footer>
+	
+</html>

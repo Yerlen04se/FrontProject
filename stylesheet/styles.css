@@ -1,0 +1,288 @@
+body {
+	box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: oldlace;
+  display: block;
+}
+
+.icon {
+	width: 12px;
+}
+
+.logo-img {
+	width: 78px;
+}
+
+.ssylka {
+	display: flex;
+}
+
+.p1 {
+	font-size: 20px;
+	position: relative;
+	top: 6px;
+	left: 3px;
+}
+
+.tipo-menu {
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	bottom: 40px;
+}
+
+.tipo-menu1 {
+	margin-left: 20px
+	
+}
+
+.a1 {
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-container {
+  display: flex;
+  max-width: 300px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.main-risunok {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 40px;
+	margin-bottom: 40px;
+}
+
+.main-img {
+	border-radius: 20px;
+}
+
+.swiper-container {
+	overflow-x: hidden;
+}
+
+.image-button {
+	background-color: oldlace;
+	width: 50px; /* Установите ширину кнопки по вашему усмотрению */
+	height: 50px; /* Установите высоту кнопки по вашему усмотрению */
+	background-image: url('images/arrow.svg'); /* Укажите путь к вашему изображению */
+	background-size: cover; /* Растягивает изображение для заполнения всей области фона */
+	border: none; /* Убирает границу у кнопки */
+	cursor: pointer; /* Делает курсор указателем при наведении на кнопку */
+	outline: none; /* Убирает рамку фокуса при клике */
+}
+
+.rotated-image {
+  transform: rotate(180deg);
+	position: relative;
+	bottom: 130px;
+	right: 80px;
+}
+
+.right-button {
+	position: relative;
+	left: 1100px;
+	bottom: 80px;
+}
+
+.wrapper-risunka {
+	
+	padding: 0px;
+}
+
+.razmer-img {
+	width: 200px;
+	height: 100px;
+	border-radius: 20px;
+}
+
+.container-v-containere {
+	width: 100%;
+	max-width: 1074px;
+	margin: 0 auto;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: oldlace;
+	display: block;
+}
+
+h2 {
+	color: white;
+	font-size: 25px;
+	padding-left: 4px;
+}
+
+.h2-pos {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	bottom: 105px;
+}
+
+.card {
+	width: 250px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: white;
+	display: block;
+	border-radius: 20px;
+}
+
+.div-card {
+	margin-right: 18px;
+	margin-bottom: 30px;
+}
+
+.cards-pos {
+	display: flex;
+	position: relative;
+	top: 30px;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+}
+
+.big-size {
+	font-size: 40px;
+}
+
+.mini-label {
+	font-size: 18px;
+	margin-left: 5px;
+	position: relative;
+	top: 10px;
+}
+
+.img-view {
+	width: 250px;
+	height: 200px;
+}
+
+.card-p {
+	margin-left: 7px;
+	position: relative;
+	bottom: 10px;
+}
+
+h3 {
+	color: black;
+}
+
+.make-label {
+	color: black;
+}
+
+.make-a {
+	text-decoration: none;
+}
+
+.footer-container {
+	width: 100%;
+	width: 1074px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: white;
+	display: block;
+	display: flex;
+	margin-top: 60px;
+}
+
+.footer-header {
+	width: 75%;
+}
+
+.label-pos {
+	position: relative;
+	left: 10px;
+	margin-bottom: 90px;
+}
+.label-har {
+	font-size: 18px;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-home {
+	position: relative;
+	top: 50px;
+	font-size: 18px;
+}
+
+.secure {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	left: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.lagman-png {
+	width: 900px;
+	height: 562.5px;
+}
+
+.lagman-ris {
+	display: flex;
+	justify-content: center;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+li::marker {
+  color: blue;
+}
+
+.recipe-pos {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.havchik {
+	margin-top: 100px;
+}
